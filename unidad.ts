@@ -20,13 +20,13 @@ class Piquero extends Unidad {
     transformar = (): Unidad => new Arquero();
 }
 
- class Arquero extends Unidad {
-     puntosDeFuerza = 10;
-     puntosObtenidosEntrenamiento = 7;
-     costoEntrenamiento = 20;
-     costoTransformacion = 40;
+class Arquero extends Unidad {
+    puntosDeFuerza = 10;
+    puntosObtenidosEntrenamiento = 7;
+    costoEntrenamiento = 20;
+    costoTransformacion = 40;
      
-     transformar = (): Unidad => new Caballero();
+    transformar = (): Unidad => new Caballero();
 }
 
 
@@ -38,18 +38,3 @@ class Caballero extends Unidad {
     
     transformar = (): Unidad => this;
 }
-
-// interface IEntrenamiento{
-//     unidadAConvertir: Unidad;
-//     costoEntrenamiento: number;
-// }
-
-// class EntrenamientoPiquero implements IEntrenamiento{
-//     unidadAConvertir = new Arquero();
-//     costoEntrenamiento = 30;
-// }
-
-// class EntrenamientoArquero implements IEntrenamiento{
-//     unidadAConvertir = new Caballero();
-//     costoEntrenamiento = 40;
-// }
