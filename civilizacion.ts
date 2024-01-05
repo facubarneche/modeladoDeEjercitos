@@ -1,3 +1,4 @@
+//Abstracta que construye un array con la cantidad de unidades de cada Civilización
 abstract class Civilizacion {
 	tropas: Unidad[];
   

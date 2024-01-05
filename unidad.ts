@@ -4,6 +4,7 @@ abstract class Unidad {
     abstract puntosObtenidosEntrenamiento: number;
     abstract costoTransformacion: number;
 
+    //Aumenta los puntos de fuerza respecto a los puntosObtenidosEntrenamiento de cada subclase
     entrenar = (): void => {
         this.puntosDeFuerza += this.puntosObtenidosEntrenamiento;
     };
@@ -17,6 +18,7 @@ class Piquero extends Unidad {
     costoEntrenamiento = 10;
     costoTransformacion = 30;
 
+    //Devuelve su respectiva unidad a transformar 
     transformar = (): Unidad => new Arquero();
 }
 
